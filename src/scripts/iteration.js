@@ -223,30 +223,30 @@ const data = [
 
 // policz, ile jest niepowtarzalnych hobby
 
-// function countUniqueHobby(elements) {
-//     // tablica na unique hobby
-//     const uniqueHobbies = [];
-//
-//     // loop po wszystkich obiektach elements
-//     // 2 loop po każdym hobby z osobna
-//     for (const element of elements){
-//         for (const hobby of element.hobbies){
-// //     sprawdź, czy już takie jest (uwzględnij wielkość liter)
-//             if (!uniqueHobbies.includes(hobby.toLowerCase())){
-// //     jeżeli nie ma to dodaj
-//                 uniqueHobbies.push(hobby.toLowerCase());
-//             }
-//         }
-//     }
-// //return ilość unikalnych hobby
-//     return uniqueHobbies.length;
-// }
+function countUniqueHobby(elements) {
+    // tablica na unique hobby
+    const uniqueHobbies = [];
+
+    // loop po wszystkich obiektach elements
+    // 2 loop po każdym hobby z osobna
+    for (const element of elements){
+        for (const hobby of element.hobbies){
+//     sprawdź, czy już takie jest (uwzględnij wielkość liter)
+            if (!uniqueHobbies.includes(hobby.toLowerCase())){
+//     jeżeli nie ma to dodaj
+                uniqueHobbies.push(hobby.toLowerCase());
+            }
+        }
+    }
+//return ilość unikalnych hobby
+    return uniqueHobbies;
+}
 
 // const countUniqueHobby = (elements) => new Set(
 //     elements.flatMap((element) => element.hobbies)
 // ).size
 //
-// console.log(countUniqueHobby(data));
+console.log(countUniqueHobby(data));
 
 // function getLuckyPersons(items) {
 //     //tablica na imiona
@@ -272,9 +272,9 @@ const data = [
 //     // return imiona jako tekst, oddzielone przecinkami
 // }
 
-const getLuckyPersons = (items) => items
-    .filter((item, id) => id % 3 === 0)
-    .map((item) => item.name)
-    .join(', ');
-
-console.log(getLuckyPersons(data));
+// const getLuckyPersons = (items) => items
+//     .filter((item, id) => id % 3 === 0)
+//     .map((item) => item.name)
+//     .join(', ');
+//
+// console.log(getLuckyPersons(data));
