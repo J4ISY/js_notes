@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lotto</title>
+    <style>
+        .ball-box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: gold;
+            border: 2px solid black;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        .play-btn {
+            font-size: 24px;
+            width: 100%;
+            padding: 20px 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .error {
+            border-color: red;
+            color: red;
+        }
+
+        .results {
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
+    <script src="./src/scripts/lotto.js" async defer></script>
+</head>
+<body>
+
+<h1>Lotto</h1>
+
+<section class="ball-box">
+    <input type="text" class="ball">
+    <input type="text" class="ball">
+    <input type="text" class="ball">
+    <input type="text" class="ball">
+    <input type="text" class="ball">
+    <input type="text" class="ball">
+</section>
+<button id="playBtn" class="play-btn">Play</button>
+<p class="results"></p>
+
+</body>
+</html>

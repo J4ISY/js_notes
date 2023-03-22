@@ -18,3 +18,14 @@
 - forEach - iteruje po tablicy
 - .slice - wycina kawałek z tablicy
 - .splice - usuwa z tablicy elementy
+
+
+## Lotto zasady
+1. Użytkownik musi podać 6 liczb
+   - liczby muszą być z zakresu 1-49
+   - liczby nie mogą się powtarzać
+   - liczby muszą być liczbami - 2 dwa
+2. Użytkownk naciska graj/losuj
+3. Losujemy 6 liczb z 1-49 bez powtórzeń
+4. Sprawdzamy ile trafił
+5. Pokazujemy ile wygrał
